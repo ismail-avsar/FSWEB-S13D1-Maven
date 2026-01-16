@@ -6,16 +6,27 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("enter width of rectangle: ");
-        double width = scanner.nextDouble();
-        System.out.println("enter height of rectangle: ");
-        double height = scanner.nextDouble();
-        System.out.println("area of rectangle: " + area(width, height));
+        System.out.println("=== Havlayan Köpek Testleri ===");
+        System.out.println("shouldWakeUp(true, 1): " + shouldWakeUp(true, 1));
+        System.out.println("shouldWakeUp(false, 2): " + shouldWakeUp(false, 2));
+        System.out.println("shouldWakeUp(true, 8): " + shouldWakeUp(true, 8));
+        System.out.println("shouldWakeUp(true, -1): " + shouldWakeUp(true, -1));
 
-        System.out.println("enter radius of circle: ");
-        double radius = scanner.nextDouble();
-        System.out.println("area of circle: " + area(radius));
+        System.out.println("\n=== Yaş Tespiti Testleri ===");
+        System.out.println("hasTeen(9, 99, 19): " + hasTeen(9, 99, 19));
+        System.out.println("hasTeen(23, 15, 42): " + hasTeen(23, 15, 42));
+        System.out.println("hasTeen(22, 23, 34): " + hasTeen(22, 23, 34));
+
+        System.out.println("\n=== Oyuncu Kedi Testleri ===");
+        System.out.println("isCatPlaying(true, 10): " + isCatPlaying(true, 10));
+        System.out.println("isCatPlaying(false, 36): " + isCatPlaying(false, 36));
+        System.out.println("isCatPlaying(false, 35): " + isCatPlaying(false, 35));
+
+        System.out.println("\n=== Alan Hesaplama Testleri ===");
+        System.out.println("area(5.0, 4.0): " + area(5.0, 4.0));
+        System.out.println("area(-1.0, 4.0): " + area(-1.0, 4.0));
+        System.out.println("area(5.0): " + area(5.0));
+        System.out.println("area(-1): " + area(-1.0));
 
     }
 
